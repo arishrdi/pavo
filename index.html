@@ -1,645 +1,1628 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <!-- SEO Meta Tags -->
-        <meta name="description" content="Pavo is a mobile app Tailwind CSS HTML template created to help you present benefits, features and information about mobile apps in order to convince visitors to download them" />
-        <meta name="author" content="Your name" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Pavo is a mobile app Tailwind CSS HTML template created to help you present benefits, features and information about mobile apps in order to convince visitors to download them"
+    />
+    <meta name="author" content="Your name" />
 
-        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-        <meta property="og:site_name" content="" /> <!-- website name -->
-        <meta property="og:site" content="" /> <!-- website link -->
-        <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
-        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-        <meta name="twitter:card" content="summary_large_image" /> <!-- to have large image post format in Twitter -->
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" />
+    <!-- website name -->
+    <meta property="og:site" content="" />
+    <!-- website link -->
+    <meta property="og:title" content="" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- to have large image post format in Twitter -->
 
-        <!-- Webpage Title -->
-        <title>Pavo Webpage Title</title>
+    <!-- Webpage Title -->
+    <title>Pavo Webpage Title</title>
 
-        <!-- Styles -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-        <link href="css/fontawesome-all.css" rel="stylesheet" />
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-        <link href="css/swiper.css" rel="stylesheet" />
-        <link href="css/magnific-popup.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
 
-        <!-- Favicon  -->
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-    <body data-spy="scroll" data-target=".fixed-top">
+    <!-- Favicon  -->
+    <link rel="icon" href="images/flink.png" />
+  </head>
+  <body data-spy="scroll" data-target=".fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar fixed-top">
+      <div
+        class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap"
+      >
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
 
-        <!-- Navigation -->
-        <nav class="navbar fixed-top">
-            <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
-                
-                <!-- Text Logo - Use this if you don't have a graphic logo -->
-                <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
+        <!-- Image Logo -->
+        <a
+          class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline"
+          href="index.html"
+        >
+          <img src="images/flink.png" alt="alternative" class="h-8" />
+        </a>
 
-                <!-- Image Logo -->
-                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
-                    <img src="images/logo.svg" alt="alternative" class="h-8" />
-                </a>
+        <button
+          class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400"
+          type="button"
+          data-toggle="offcanvas"
+        >
+          <span
+            class="navbar-toggler-icon inline-block w-8 h-8 align-middle"
+          ></span>
+        </button>
 
-                <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
-                    <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
-                </button>
-
-                <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
-                    <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
-                        <li>
-                            <a class="nav-link page-scroll active" href="#header">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="#features">Features</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="#details">Details</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="#pricing">Pricing</a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="#download">Download</a>
-                        </li>
-                    </ul>
-                    <span class="block lg:ml-3.5">
-                        <a class="no-underline" href="#your-link">
-                            <i class="fab fa-apple text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200 mr-1.5"></i>
-                        </a>
-                        <a class="no-underline" href="#your-link">
-                            <i class="fab fa-android text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200"></i>
-                        </a>
-                    </span>
-                </div> <!-- end of navbar-collapse -->
-            </div> <!-- end of container -->
-        </nav> <!-- end of navbar -->
-        <!-- end of navigation -->
-
-        <!-- Header -->
-        <header id="header" class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
-            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
-                <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
-                    <h1 class="h1-large mb-5">Team management mobile application</h1>
-                    <p class="p-large mb-8">Start getting things done together with your team based on Pavo's revolutionary team management features</p>
-                    <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
-                    <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a>
-                </div>
-                <div class="xl:text-right">
-                    <img class="inline" src="images/header-smartphone.png" alt="alternative" />
-                </div>
-            </div> <!-- end of container -->
-        </header> <!-- end of header -->
-        <!-- end of header -->
-
-
-        <!-- Introduction -->
-        <div class="pt-4 pb-14 text-center">
-            <div class="container px-4 sm:px-8 xl:px-4">
-                <p class="mb-4 text-gray-800 text-3xl leading-10 lg:max-w-5xl lg:mx-auto"> Team management mobile apps don’t get better than Pavo. It’s probably the best app in the world for this purpose. Don’t hesitate to give it a try today and you will fall in love with it</p>
-            </div> <!-- end of container -->
+        <div
+          class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center"
+          id="navbarsExampleDefault"
+        >
+          <ul
+            class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row"
+          >
+            <li>
+              <a class="nav-link page-scroll active" href="#header"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li>
+              <a class="nav-link page-scroll" href="#details">Details</a>
+            </li>
+            <li>
+              <a class="nav-link page-scroll" href="#features">Features</a>
+            </li>
+            <li>
+              <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+            </li>
+            <!-- <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown01"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Drop</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item page-scroll" href="article.html"
+                  >Article Details</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item page-scroll" href="terms.html"
+                  >Terms Conditions</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item page-scroll" href="privacy.html"
+                  >Privacy Policy</a
+                >
+              </div>
+            </li>
+            <li>
+              <a class="nav-link page-scroll" href="#download">Download</a>
+            </li> -->
+          </ul>
+          <!-- <span class="block lg:ml-3.5">
+            <a class="no-underline" href="#your-link">
+              <i
+                class="fab fa-apple text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200 mr-1.5"
+              ></i>
+            </a>
+            <a class="no-underline" href="#your-link">
+              <i
+                class="fab fa-android text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200"
+              ></i>
+            </a>
+          </span> -->
         </div>
-        <!-- end of introduction -->
+        <!-- end of navbar-collapse -->
+      </div>
+      <!-- end of container -->
+    </nav>
+    <!-- end of navbar -->
+    <!-- end of navigation -->
 
-
-        <!-- Features -->
-        <div id="features" class="cards-1">
-            <div class="container px-4 sm:px-8 xl:px-4">
-
-                <!-- Card -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/features-icon-1.svg" alt="alternative" />
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Platform Integration</h5>
-                        <p class="mb-4">You sales force can use the app on any smartphone platform without compatibility issues</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-
-                <!-- Card -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/features-icon-2.svg" alt="alternative" />
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Easy On Resources</h5>
-                        <p class="mb-4">Works smoothly even on older generation hardware due to our optimization efforts</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-
-                <!-- Card -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/features-icon-3.svg" alt="alternative" />
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Great Performance</h5>
-                        <p class="mb-4">Optimized code and innovative technology insure no delays and ultra-fast responsiveness</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-
-                <!-- Card -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/features-icon-4.svg" alt="alternative" />
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Multiple Languages</h5>
-                        <p class="mb-4">Choose from one of the 40 languages that come pre-installed and start selling smarter</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-
-                <!-- Card -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/features-icon-5.svg" alt="alternative" />
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Free Updates</h5>
-                        <p class="mb-4">Don't worry about future costs, pay once and receive all future updates at no extra cost</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-
-                <!-- Card -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/features-icon-6.svg" alt="alternative" />
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Community Support</h5>
-                        <p class="mb-4">Register the app and get acces to knowledge and ideas from the Pavo online community</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-
-            </div> <!-- end of container -->
-        </div> <!-- end of cards-1 -->
-        <!-- end of features -->
-
-
-        <!-- Details 1 -->
-        <div id="details" class="pt-12 pb-16 lg:pt-16">
-            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
-                <div class="lg:col-span-5">
-                    <div class="mb-16 lg:mb-0 xl:mt-16">
-                        <h2 class="mb-6">Results driven ground breaking technology</h2>
-                        <p class="mb-4">Based on our team's extensive experience in developing line of business applications and constructive customer feedback we reached a new level of revenue.</p>
-                        <p class="mb-4">We enjoy helping small and medium sized tech businesses take a shot at established Fortune 500 companies</p>
-                    </div>
-                </div> <!-- end of col -->
-                <div class="lg:col-span-7">
-                    <div class="xl:ml-14">
-                        <img class="inline" src="images/details-1.jpg" alt="alternative" />
-                    </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of container -->
+    <!-- Header -->
+    <header
+      id="header"
+      class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32"
+    >
+      <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+        <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+          <h1 class="h1-large mb-5">Proposal Penawaran Flink Indonesia</h1>
+          <p class="p-large mb-8">
+            Start getting things done together with your team based on Pavo's
+            revolutionary team management features
+          </p>
+          <a class="btn-solid-lg" href="#your-link"
+            ><i class="fab fa-apple"></i>Download</a
+          >
+          <a class="btn-solid-lg secondary" href="#your-link"
+            ><i class="fab fa-google-play"></i>Download</a
+          >
         </div>
-        <!-- end of details 1 -->
-
-
-        <!-- Details 2 -->
-        <div class="py-24">
-            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
-                <div class="lg:col-span-7">
-                    <div class="mb-12 lg:mb-0 xl:mr-14">
-                        <img class="inline" src="images/details-2.jpg" alt="alternative" />
-                    </div>
-                </div> <!-- end of col -->
-                <div class="lg:col-span-5">
-                    <div class="xl:mt-12">
-                        <h2 class="mb-6">Instant results for the marketing department</h2>
-                        <ul class="list mb-7 space-y-2">
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Features that will help you and your marketers</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Smooth learning curve due to the knowledge base</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Ready out-of-the-box with minor setup settings</div>
-                            </li>
-                        </ul>
-                        <a class="btn-solid-reg popup-with-move-anim mr-1.5" href="#details-lightbox">Lightbox</a>
-                        <a class="btn-outline-reg" href="article.html">Details</a>
-                    </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of container -->
+        <div class="xl:text-right">
+          <img
+            class="inline"
+            src="images/header-smartphone.png"
+            alt="alternative"
+          />
         </div>
-        <!-- end of details 2 -->
+      </div>
+      <!-- end of container -->
+    </header>
+    <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Introduction -->
+    <div class="pt-4 pb-14 text-center">
+      <div class="container px-4 sm:px-8 xl:px-4">
+        <p
+          class="mb-4 text-gray-800 text-3xl leading-10 lg:max-w-5xl lg:mx-auto"
+        >
+          Team management mobile apps don’t get better than Pavo. It’s probably
+          the best app in the world for this purpose. Don’t hesitate to give it
+          a try today and you will fall in love with it
+        </p>
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of introduction -->
 
 
-        <!-- Details Lightbox -->
-        <!-- Lightbox -->
-        <div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
-            <div class="lg:grid lg:grid-cols-12 lg:gap-x-8">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="lg:col-span-8">
-                    <div class="mb-12 text-center lg:mb-0 lg:text-left xl:mr-6">
-                        <img class="inline rounded-lg" src="images/details-lightbox.jpg" alt="alternative" />
-                    </div>
-                </div> <!-- end of col -->
-                <div class="lg:col-span-4">
-                    <h3 class="mb-2">Goals Setting</h3>
-                    <hr class="w-11 h-0.5 mt-0.5 mb-4 ml-0 border-none bg-indigo-600" />
-                    <p>The app can easily help you track your personal development evolution if you take the time to set it up.</p>
-                    <h4 class="mt-7 mb-2.5">User Feedback</h4>
-                    <p class="mb-4">This is a great app which can help you save time and make your live easier. And it will help improve your productivity.</p>
-                    <ul class="list mb-6 space-y-2">
-                        <li class="flex">
-                            <i class="fas fa-chevron-right"></i>
-                            <div>Splash screen panel</div>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-chevron-right"></i>
-                            <div>Statistics graph report</div>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-chevron-right"></i>
-                            <div>Events calendar layout</div>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-chevron-right"></i>
-                            <div>Location details screen</div>
-                        </li>
-                        <li class="flex">
-                            <i class="fas fa-chevron-right"></i>
-                            <div>Onboarding steps interface</div>
-                        </li>
-                    </ul>
-                    <a class="btn-solid-reg mfp-close page-scroll" href="#download">Download</a>
-                    <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of lightbox-basic -->
-        <!-- end of lightbox -->
-        <!-- end of details lightbox -->
 
-
-        <!-- Details 3 -->
-        <div class="pt-16 pb-12">
-            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
-                <div class="lg:col-span-5">
-                    <div class="mb-16 lg:mb-0 xl:mt-16">
-                        <h2 class="mb-6">Platform integration and life time free updates</h2>
-                        <p class="mb-4">Get a glimpse of what this app can do for your marketing automation and understand why current users are so excited when using Pavo
-                            together with their teams.</p>
-                        <p class="mb-4">We will promptly answer any questions and honor your requests based on the service level agreement</p>
-                    </div>
-                </div> <!-- end of col -->
-                <div class="lg:col-span-7">
-                    <div class="ml-14">
-                        <img class="inline" src="images/details-3.jpg" alt="alternative" />
-                    </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of container -->
+    <!-- Details 1 -->
+    <div id="details" class="pt-12 pb-16 lg:pt-16">
+      <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+        <div class="lg:col-span-5">
+          <div class="mb-16 lg:mb-0 xl:mt-16">
+            <h2 class="mb-6">Latar Belakang</h2>
+            <p class="mb-4">
+              Website adalah salah satu media internet yang berbentuk
+              halaman-halaman web yang menampilkan informasi tertentu. Dengan
+              adanya website dapat membantu perusahaan dalam mempromosikannya.
+            </p>
+            <p class="mb-4">
+              <strong> Flink Digital Agency</strong> adalah perusahaan yang
+              bergerak di bidang teknologi informasi, dengan produk utama berupa
+              jasa perancangan website (personal maupun corporate), web ap-
+              plication, dan sistem informasi.
+            </p>
+          </div>
         </div>
-        <!-- end of details 3 -->
+        <!-- end of col -->
+        <div class="lg:col-span-7">
+          <div class="xl:ml-14">
+            <img class="inline" src="images/details-1.jpg" alt="alternative" />
+          </div>
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of details 1 -->
 
-
-        <!-- Statistics -->
-        <div class="counter">
-            <div class="container px-4 sm:px-8">
-                
-                <!-- Counter -->
-                <div id="counter">
-                    <div class="cell">
-                        <div class="counter-value number-count" data-count="231">1</div>
-                        <p class="counter-info">Happy Users</p>
-                    </div>
-                    <div class="cell">
-                        <div class="counter-value number-count" data-count="385">1</div>
-                        <p class="counter-info">Issues Solved</p>
-                    </div>
-                    <div class="cell">
-                        <div class="counter-value number-count" data-count="159">1</div>
-                        <p class="counter-info">Good Reviews</p>
-                    </div>
-                    <div class="cell">
-                        <div class="counter-value number-count" data-count="127">1</div>
-                        <p class="counter-info">Case Studies</p>
-                    </div>
-                    <div class="cell">
-                        <div class="counter-value number-count" data-count="211">1</div>
-                        <p class="counter-info">Orders Received</p>
-                    </div>
+    <!-- Details 2 -->
+    <div class="py-24">
+      <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+        <div class="lg:col-span-7">
+          <div class="mb-12 lg:mb-0 xl:mr-14">
+            <img class="inline" src="images/details-2.jpg" alt="alternative" />
+          </div>
+        </div>
+        <!-- end of col -->
+        <div class="lg:col-span-5">
+          <div class="xl:mt-12">
+            <h2 class="mb-6">Tujuan</h2>
+            <ul class="list mb-7 space-y-2">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>
+                  Sebagai alat bantu perusahaan dalam hal promosi perusahaan.
                 </div>
-                <!-- end of counter -->
-
-            </div> <!-- end of container -->
-        </div> <!-- end of counter -->
-        <!-- end of statistics -->
-
-
-        <!-- Testimonials -->
-        <div class="slider-1 py-32 bg-gray">
-            <div class="container px-4 sm:px-8">
-                <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">What do users think about Pavo</h2>
-
-                <!-- Card Slider -->
-                <div class="slider-container">
-                    <div class="swiper-container card-slider">
-                        <div class="swiper-wrapper">
-                            
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img class="card-image" src="images/testimonial-1.jpg" alt="alternative" />
-                                    <div class="card-body">
-                                        <p class="italic mb-3">It's been so fun to work with Pavo, I've managed to integrate it properly into my business flow and it's great</p>
-                                        <p class="testimonial-author">Jude Thorn - Designer</p>
-                                    </div>
-                                </div>
-                            </div> <!-- end of swiper-slide -->
-                            <!-- end of slide -->
-
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img class="card-image" src="images/testimonial-2.jpg" alt="alternative" />
-                                    <div class="card-body">
-                                        <p class="italic mb-3">We were so focused on launching as many campaigns as possible that we've forgotten to target our loyal customers</p>
-                                        <p class="testimonial-author">Roy Smith - Developer</p>
-                                    </div>
-                                </div>
-                            </div> <!-- end of swiper-slide -->
-                            <!-- end of slide -->
-
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img class="card-image" src="images/testimonial-3.jpg" alt="alternative" />
-                                    <div class="card-body">
-                                        <p class="italic mb-3">I've been searching for a tool like Pavo for so long. I love the reports it generates and the amazing high accuracy</p>
-                                        <p class="testimonial-author">Marsha Singer - Marketer</p>
-                                    </div>
-                                </div>
-                            </div> <!-- end of swiper-slide -->
-                            <!-- end of slide -->
-
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img class="card-image" src="images/testimonial-4.jpg" alt="alternative" />
-                                    <div class="card-body">
-                                        <p class="italic mb-3">We've been waiting for a powerful piece of software that can help businesses manage their marketing projects</p>
-                                        <p class="testimonial-author">Tim Shaw - Designer</p>
-                                    </div>
-                                </div>
-                            </div> <!-- end of swiper-slide -->
-                            <!-- end of slide -->
-
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img class="card-image" src="images/testimonial-5.jpg" alt="alternative" />
-                                    <div class="card-body">
-                                        <p class="italic mb-3">Searching for a great prototyping and layout design app was difficult but thankfully I found app suite quickly</p>
-                                        <p class="testimonial-author">Lindsay Spice - Marketer</p>
-                                    </div>
-                                </div>
-                            </div> <!-- end of swiper-slide -->
-                            <!-- end of slide -->
-
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img class="card-image" src="images/testimonial-6.jpg" alt="alternative" />
-                                    <div class="card-body">
-                                        <p class="italic mb-3">The app support team is amazing. They've helped me with some issues and I am so grateful to the entire team</p>
-                                        <p class="testimonial-author">Ann Blake - Developer</p>
-                                    </div>
-                                </div>
-                            </div> <!-- end of swiper-slide -->
-                            <!-- end of slide -->
-
-                        </div> <!-- end of swiper-wrapper -->
-
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <!-- end of add arrows -->
-
-                    </div> <!-- end of swiper-container -->
-                </div> <!-- end of slider-container -->
-                <!-- end of card slider -->
-
-            </div> <!-- end of container -->
-        </div> <!-- end of slider-1 -->
-        <!-- end of testimonials -->
-
-
-        <!-- Pricing -->
-        <div id="pricing" class="cards-2">
-            <div class="absolute bottom-0 h-40 w-full bg-white"></div>
-            <div class="container px-4 pb-px sm:px-8">
-                <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">Pricing options for all budgets</h2>
-                <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto"> Our pricing plans are setup in such a way that any user can start enjoying Pavo without worrying so much about costs. They are flexible and work for any type of industry </p>
-
-                <!-- Card-->
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">STANDARD</div>
-                        <div class="price"><span class="currency">$</span><span class="value">29</span></div>
-                        <div class="frequency">monthly</div>
-                        <p>This basic package covers the marketing needs of small startups</p>
-                        <ul class="list mb-7 space-y-2 text-left">
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>List building and relations</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Seamless platform integration</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Great performance on devices</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Community support and videos</div>
-                            </li>
-                        </ul>
-                        <div class="button-wrapper">
-                            <a class="btn-solid-reg page-scroll" href="#download">Download</a>
-                        </div>
-                    </div>
-                </div> <!-- end of card -->
-                <!-- end of card -->
-
-                <!-- Card-->
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">ADVANCED</div>
-                        <div class="price"><span class="currency">$</span><span class="value">39</span></div>
-                        <div class="frequency">monthly</div>
-                        <p>This is a more advanced package suited for medium companies</p>
-                        <ul class="list mb-7 space-y-2 text-left">
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>List building and relations</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Seamless platform integration</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Great performance on devices</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Community support and videos</div>
-                            </li>
-                        </ul>
-                        <div class="button-wrapper">
-                            <a class="btn-solid-reg page-scroll" href="#download">Download</a>
-                        </div>
-                    </div>
-                </div> <!-- end of card -->
-                <!-- end of card -->
-
-                <!-- Card-->
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">COMPLETE</div>
-                        <div class="price"><span class="currency">$</span><span class="value">49</span></div>
-                        <div class="frequency">monthly</div>
-                        <p>This is a comprehensive package designed for big organizations</p>
-                        <ul class="list mb-7 text-left space-y-2">
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>List building and relations</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Seamless platform integration</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Great performance on devices</div>
-                            </li>
-                            <li class="flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div>Community support and videos</div>
-                            </li>
-                        </ul>
-                        <div class="button-wrapper">
-                            <a class="btn-solid-reg page-scroll" href="#download">Download</a>
-                        </div>
-                    </div>
-                </div> <!-- end of card -->
-                <!-- end of card -->
-
-            </div> <!-- end of container -->
-        </div> <!-- end of cards-2 -->
-        <!-- end of pricing -->
-
-
-        <!-- Conclusion -->
-        <div id="download" class="basic-5">
-            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2">
-                <div class="mb-16 lg:mb-0">
-                    <img src="images/conclusion-smartphone.png" alt="alternative" />
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>
+                  Sebagai media komunikasi antara perusahaan dengan konsumen
+                  perusahaan.
                 </div>
-                <div class="lg:mt-24 xl:mt-44 xl:ml-12">
-                    <p class="mb-9 text-gray-800 text-3xl leading-10">Team management mobile applications don’t get much better than Pavo. Download it today</p>
-                    <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
-                    <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a>
-                </div>
-            </div> <!-- end of container -->
-        </div> <!-- end of basic-5 -->
-        <!-- end of conclusion -->
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Meningkatkan prestige perusahaan.</div>
+              </li>
+            </ul>
+            <a
+              class="btn-solid-reg popup-with-move-anim mr-1.5"
+              href="#details-lightbox"
+              >Lightbox</a
+            >
+            <a class="btn-outline-reg" href="article.html">Details</a>
+          </div>
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of details 2 -->
+
+    <!-- Details Lightbox -->
+    <!-- Lightbox -->
+    <div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-x-8">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="lg:col-span-8">
+          <div class="mb-12 text-center lg:mb-0 lg:text-left xl:mr-6">
+            <img
+              class="inline rounded-lg"
+              src="images/details-lightbox.jpg"
+              alt="alternative"
+            />
+          </div>
+        </div>
+        <!-- end of col -->
+        <div class="lg:col-span-4">
+          <h3 class="mb-2">Goals Setting</h3>
+          <hr class="w-11 h-0.5 mt-0.5 mb-4 ml-0 border-none bg-indigo-600" />
+          <p>
+            The app can easily help you track your personal development
+            evolution if you take the time to set it up.
+          </p>
+          <h4 class="mt-7 mb-2.5">User Feedback</h4>
+          <p class="mb-4">
+            This is a great app which can help you save time and make your live
+            easier. And it will help improve your productivity.
+          </p>
+          <ul class="list mb-6 space-y-2">
+            <li class="flex">
+              <i class="fas fa-chevron-right"></i>
+              <div>Splash screen panel</div>
+            </li>
+            <li class="flex">
+              <i class="fas fa-chevron-right"></i>
+              <div>Statistics graph report</div>
+            </li>
+            <li class="flex">
+              <i class="fas fa-chevron-right"></i>
+              <div>Events calendar layout</div>
+            </li>
+            <li class="flex">
+              <i class="fas fa-chevron-right"></i>
+              <div>Location details screen</div>
+            </li>
+            <li class="flex">
+              <i class="fas fa-chevron-right"></i>
+              <div>Onboarding steps interface</div>
+            </li>
+          </ul>
+          <a class="btn-solid-reg mfp-close page-scroll" href="#download"
+            >Download</a
+          >
+          <button class="btn-outline-reg mfp-close as-button" type="button">
+            Back
+          </button>
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightbox -->
+
+    <!-- Details 3 -->
+    <!-- Features -->
+    <div id="details" class="cards-1">
+      <h3 class="mb-2">Manfaat</h3>
+
+      <div class="container px-4 sm:px-8 xl:px-4">
+        <!-- Card -->
+        <div class="card">
+          <div class="card-image">
+            <img src="images/features-icon-2.svg" alt="alternative" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Promosi</h5>
+            <p class="mb-4">
+              Membantu mempromosikan perusahaan baik dari sisi fasilitas,
+              kenyamanan, keamanan, serta segala kelebihan yang dimiliki
+            </p>
+          </div>
+        </div>
+        <!-- end of card -->
+
+        <!-- Card -->
+        <div class="card">
+          <div class="card-image">
+            <img src="images/features-icon-5.svg" alt="alternative" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Berkomunikasi</h5>
+            <p class="mb-4">
+              Membantu perusahaan untuk berkomunikasi satu arah atau bahkan dua
+              arah dengan konsumen perusahaan
+            </p>
+          </div>
+        </div>
+        <!-- end of card -->
+
+        <!-- Card -->
+        <div class="card">
+          <div class="card-image">
+            <img src="images/features-icon-3.svg" alt="alternative" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Prestige</h5>
+            <p class="mb-4">
+              Dapat meningkatkan prestige perusahaan karena dipicu oleh service
+              excellence perusahaan terhadap konsumen
+            </p>
+          </div>
+        </div>
+        <!-- end of card -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of cards-1 -->
+    <!-- end of features -->
+    <!-- end of details 3 -->
+
+    <!-- Cards -->
+    <div class="ex-cards-1 py-4" id="details">
+      <div class="container px-4 sm:px-8">
+      <h3 class="mb-16 text-center">Tahapan Pembuatan Website</h3>
+
+        <!-- Card -->
+        <div class="card">
+          <ul class="list-unstyled">
+            <li class="flex">
+              <span class="fa-stack">
+                <span class="fas fa-circle fa-stack-2x"></span>
+                <span class="fa-stack-1x">1</span>
+              </span>
+              <div class="flex-1 ml-3">
+                <h5 class="mt-0.5 mb-1.5">Tahap Persiapan</h5>
+                <p class="mb-4">
+                  Features include an eye catching morphtext in the header,
+                  details lightbox for more details information
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+        <!-- Card -->
+        <div class="card">
+          <ul class="list-unstyled">
+            <li class="flex">
+              <span class="fa-stack">
+                <span class="fas fa-circle fa-stack-2x"></span>
+                <span class="fa-stack-1x">2</span>
+              </span>
+              <div class="flex-1 ml-3">
+                <h5 class="mt-0.5 mb-1.5">
+                  Tahap Perancangan Sistem Informasi
+                </h5>
+                <p class="mb-4">
+                  Statistics numbers for important values, card slider for
+                  testimonials, image slider for customer logos
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+        <!-- Card -->
+        <div class="card">
+          <ul class="list-unstyled">
+            <li class="flex">
+              <span class="fa-stack">
+                <span class="fas fa-circle fa-stack-2x"></span>
+                <span class="fa-stack-1x">3</span>
+              </span>
+              <div class="flex-1 ml-3">
+                <h5 class="mt-0.5 mb-1.5">
+                  Tahap Pembuatan Sistem Informasi dan Revisi
+                </h5>
+                <p class="mb-4">
+                  Some useful extra pages are bundled with the template lik
+                  article details, terms conditions and privacy policy
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+        <!-- Card -->
+        <div class="card">
+          <ul class="list-unstyled">
+            <li class="flex">
+              <span class="fa-stack">
+                <span class="fas fa-circle fa-stack-2x"></span>
+                <span class="fa-stack-1x">4</span>
+              </span>
+              <div class="flex-1 ml-3">
+                <h5 class="mt-0.5 mb-1.5">Tahap Implementasi dan Uji Coba</h5>
+                <p class="mb-4">
+                  Some useful extra pages are bundled with the template lik
+                  article details, terms conditions and privacy policy
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+        <!-- Card -->
+        <div class="card">
+          <ul class="list-unstyled">
+            <li class="flex">
+              <span class="fa-stack">
+                <span class="fas fa-circle fa-stack-2x"></span>
+                <span class="fa-stack-1x">5</span>
+              </span>
+              <div class="flex-1 ml-3">
+                <h5 class="mt-0.5 mb-1.5">Tahap Pelatihan</h5>
+                <p class="mb-4">
+                  Some useful extra pages are bundled with the template lik
+                  article details, terms conditions and privacy policy
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+        <!-- Card -->
+        <div class="card">
+          <ul class="list-unstyled">
+            <li class="flex">
+              <span class="fa-stack">
+                <span class="fas fa-circle fa-stack-2x"></span>
+                <span class="fa-stack-1x">6</span>
+              </span>
+              <div class="flex-1 ml-3">
+                <h5 class="mt-0.5 mb-1.5">
+                  Tahap Maintenance Website dan Sistem Informasi
+                </h5>
+                <p class="mb-4">
+                  Some useful extra pages are bundled with the template lik
+                  article details, terms conditions and privacy policy
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of ex-cards-1 -->
+    <!-- end of cards -->
+
+    <!-- jasa -->
+    <div class="py-32 container px-4 sm:px-8 xl:px-4" id="details">
+      <h2 class="mb-12">Jasa yang Diberikan</h2>
+      <h3 class="mb-2">
+        1. Jasa Perancangan Website (Personal maupun Corporate)
+      </h3>
+      <p class="mb-4">
+        Website personal atau organisasi ataupun instansi, sering disebut dengan
+        website company profile diperuntukkan sebagai situs resmi
+        instansi/organisasi/ bisnis ataupun personal anda
+      </p>
+      <div class="ex-basic-1 mb-7">
+
+        <div class="text-box">
+      <strong>Fitur yang akan perusahaan dapatkan:</strong>
+      <ul class="list mb-7 mt-2  space-y-2">
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Home</div>
+        </li>
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>About Us</div>
+        </li>
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Contact Us</div>
+        </li>
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Other Pages</div>
+        </li>
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Article/News/Blog</div>
+        </li>
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Free Photo Gallery</div>
+        </li>
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Free Entry Data for 5 pages (basic entry data)</div>
+        </li>
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Free Manual Book</div>
+        </li>
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Free Domain+Hosting</div>
+        </li>
+      </ul>
+      </div></div>
+
+      <h3 class="mb-2">2. Web Application</h3>
+      <p class="mb-4">
+        Aplikasi Website/Website Kustom/Software berbasis Web adalah aplikasi
+        yang dapat diakses siapapun, asalkan terhubung dengan jaringan yang dise
+        diakan, seperti Internet atau intranet
+      </p>
+      <div class="ex-basic-1 mb-7">
+
+        <div class="text-box">
+          
+          <strong class="mb-2">Kenapa Web Application?</strong>
+          <ol class="list-decimal ml-4 mt-2">
+            <li>Kemudahan penggunaan web browser pada sisi klien</li>
+            <li>
+              Kemampuan update dan maintain aplikasi website tanpa perlu menginstall
+              aplikasi tersebut di setiap komputer
+            </li>
+            <li>
+              Cross-platform compatibility, cocok untuk semua OS ataupun lingkungan
+              yang ada
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <h3 class="mb-2">3. Sistem Informasi</h3>
+      <p class="mb-4">
+        Sistem informasi berbasis web adalah sebuah system informasi yang
+        menggunakan teknologi website untuk memberikan informasi dan layanan
+        kepada pengguna. Biasanya terdiri dari satu atau lebih aplikasi web yang
+        masing-masing mempunyai fungsi tertentu. Dimana masing-masing komponen
+        tersebut saling mendukung antara satu dengan yang lain.
+      </p>
 
 
-        <!-- Footer -->
-        <div class="footer">
-            <div class="container px-4 sm:px-8">
-                <h4 class="mb-8 lg:max-w-3xl lg:mx-auto">Pavo is a mobile application for marketing automation and you can reach the team at <a class="text-indigo-600 hover:text-gray-500" href="mailto:email@domain.com">email@domain.com</a></h4>
-                <div class="social-container">
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-instagram fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-youtube fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </div> <!-- end of social-container -->
-            </div> <!-- end of container -->
-        </div> <!-- end of footer -->
-        <!-- end of footer -->
+      <h3 class="mb-2">4. Maintain Web</h3>
+      <p class="mb-4">
+        Hacker dan Cracker pasti ada di luar sana, dan biasanya mereka melakukan
+        hal-hal yang aneh dan terkadang mengganggu, apalagi ketika mereka sedang
+        bosan, seperti menghancurkan website anda atau hanya merubah tampilan
+        depannya.
+      </p>
+      <p class="mb-4">
+        Jasa maintenance website kami akan menjaga website anda dari
+        serangan-serangan hacker dan cracker, dan menanggulangi sebelum semua
+        menjadi lebih parah, minimal menjadikan website anda seperti konsidi
+        sebelumnya.
+      </p>
 
 
-        <!-- Copyright -->
-        <div class="copyright">
-            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
-                <ul class="mb-4 list-unstyled p-small">
-                    <li class="mb-2"><a href="article.html">Article Details</a></li>
-                    <li class="mb-2"><a href="terms.html">Terms & Conditions</a></li>
-                    <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
-                </ul>
-                <p class="pb-2 p-small statement">Copyright © <a href="#your-link" class="no-underline">Your name</a></p>
 
-                <p class="pb-2 p-small statement">Distributed by :<a href="https://themewagon.com/" class="no-underline">Themewagon</a></p>
-            </div> 
+      <div class="ex-basic-1 mb-7">
 
-        <!-- end of container -->
-        </div> <!-- end of copyright -->
-        <!-- end of copyright -->
+        <div class="text-box">
+      <strong>Ada Beberapa Pilihan yang kami Tawarkan</strong>
+      <p class="mt-2">
+        <strong>
+          1. Maintenance @tahun
+        </strong>
+        
+      </p>
+      <ul class="list mb-2 ">
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Menjaga website anda selama setahun dari serangan cracker.</div>
+        </li>
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Mengembalikan website anda ke kondisi sebelum diserang.</div>
+        </li>
+      </ul>
+      <p>
+        <strong>
+          2. Maintenance @jasa
+        </strong>
+      </p>
+      <ul class="list mb-2 space-y-2">
+        <li class="flex">
+          <i class="fas fa-chevron-right"></i>
+          <div>Mengembalikan website anda ke kondisi sebelum diserang</div>
+        </li>
+      </ul>
+        </div>
+        </div>
+    </div>
+    <!-- jasa -->
+
+    <!-- maintain web -->
+    <div class="container px-4 sm:px-8 xl:px-4">
+      
+    </div>
+    <!-- end maintain web -->
+
+    <!-- fitur website -->
+    <div class="container px-4 sm:px-8 xl:px-4 pb-32" id="features">
+    <h2 class="mb-4">Fitur Website</h2>
+    <ul class="list mb-12 space-y-2">
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Desain,</strong>
+          Jika perusahaan anda sudah mempunyai website. Maka berha- ti-hatilah
+          dengan para hacker. Untuk menghindari hal tersebut, kita akan menjaga
+          website anda 24 jam. Berikan akses web anda kepada kami, maka kami
+          akan menjadi Web Guardian Specialist.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Update data dari klien,</strong>
+          Kami mengambil data perusahaan anda dan kami akan membantu mengupdate
+          ke website dengan ketentuan maksimal 5item yang akan diupdate. Dalam 1
+          bulan 1x update, 2x atau bahkan 4x update.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Update data dari kami, </strong>
+          Jika anda tidak memiliki bahan untuk diupdate ke website, maka kami
+          siap membantu mencari bahan dan mengubahnya menjadi bacaan yang
+          menarik
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Desain,</strong>
+          Jika anda menginginkan desain spesial, maka semua desain spe- sial
+          dari kami, bedanya adalah Responsive.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Responsive,</strong>
+          Desain anda akan menyesuaikan dengan mobile phone, ipad, bentuk mobile
+          yang lain serta desktop karena banyak pengguna sekarang mengakses
+          lewat berbagai media.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Halaman,</strong>
+          Jumlah halaman akan berbeda tergantung seberapa banyak konten school
+          profil anda.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Kategori,</strong>
+          Jumlah kategori produk, portofolio akan berbeda tergantung pada bisnis
+          anda.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Produk,</strong>
+          Jumlah produk yang terdapat di website akan berbeda, tergantung pada
+          bisnis anda
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Slideshow,</strong>
+          Tampilan produk anda akan berjalan, berubah secara otomatis.
+          Pengunjung akan melihat semua produk dalam 1 halaman utsms
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Dinamik Website,</strong>
+          Anda atau staff anda bisa mengubah secara mandiri semua fitur yang ada
+          di dalam website.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Sistem Penunjang,</strong>
+          Anda atau staff anda bisa mengubah secara mandiri semua fitur yang ada
+          di dalam website.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>SEO on Page, </strong>
+          Anda atau staff anda bisa mengubah secara mandiri semua fitur yang ada
+          di dalam website.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Statistik Pengunjung,</strong>
+          Anda atau staff anda bisa mengubah secara mandiri semua fitur yang ada
+          di dalam website.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Update Mandiri,</strong>
+          Anda atau staff anda bisa mengubah secara mandiri semua fitur yang ada
+          di dalam website.
+        </div>
+      </li>
+      <li class="flex">
+        <i class="fas fa-chevron-right fa-2xs text-xs"></i>
+        <div class="flex-1 ml-2">
+          <strong>Account Social Media</strong>
+          Anda belum punya akun sosial media, disini kami bantu anda membuatnya
+          untuk anda.
+        </div>
+      </li>
+    </ul>
+  </div>
+    <!-- end fitur website -->
 
 
-        <!-- Scripts -->
-        <script src="js/jquery.min.js"></script> <!-- jQuery for JavaScript plugins -->
-        <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-        <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-        <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    </body>
+    <!-- Pricing -->
+    <div id="pricing" class="cards-2">
+      <div class="absolute bottom-0 h-40 w-full bg-white"></div>
+      <div class="container px-4 pb-px sm:px-8">
+        <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">
+          Pricelist Website
+        </h2>
+        <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto">
+          Selain jasa pembuatan website, Flink Digital juga menyediakan jasa
+          lain yaitu Digital Content Creator dan Digital Content Manajemen.
+          Untuk pricelist dan detailnya bisa dilihat di halaman berikut
+        </p>
+
+        <!-- Card-->
+        <div class="card invisible">
+          <div class="card-body">
+            <div class="card-title">PROMO</div>
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">1 jt</span>
+            </div>
+            <!-- <div class="frequency">Harga sudah termasuk domain hosting (tidak mendapatkan cpanel)</div> -->
+            <p class="frequency mt-3">
+              Harga sudah termasuk domain hosting (tidak mendapatkan cpanel)
+            </p>
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Maintain Web Rp. 100 rb/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update dari klien 1x/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Responsive</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>10 halaman</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>10 kategori</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Produk maksimal 50</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Slideshow</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update mandiri</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>1 e-mail company</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Waktu &lt;1 bulan</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">PROMO</div>
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">1 jt</span>
+            </div>
+            <!-- <div class="frequency">Harga sudah termasuk domain hosting (tidak mendapatkan cpanel)</div> -->
+            <p class="frequency mt-3">
+              Harga sudah termasuk domain hosting (tidak mendapatkan cpanel)
+            </p>
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Maintain Web Rp. 100 rb/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update dari klien 1x/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Responsive</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>10 halaman</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>10 kategori</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Produk maksimal 50</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Slideshow</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update mandiri</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>1 e-mail company</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Waktu &lt;1 bulan</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <div class="card invisible">
+          <div class="card-body">
+            <div class="card-title">PROMO</div>
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">1 jt</span>
+            </div>
+            <!-- <div class="frequency">Harga sudah termasuk domain hosting (tidak mendapatkan cpanel)</div> -->
+            <p class="frequency mt-3">
+              Harga sudah termasuk domain hosting (tidak mendapatkan cpanel)
+            </p>
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Maintain Web Rp. 100 rb/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update dari klien 1x/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Responsive</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>10 halaman</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>10 kategori</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Produk maksimal 50</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Slideshow</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update mandiri</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>1 e-mail company</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Waktu &lt;1 bulan</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">STANDARD</div>
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">3 jt</span>
+            </div>
+            <p class="frequency mt-3">
+              Harga sudah termasuk domain hosting
+            </p>
+            <!-- <p>
+              This basic package covers the marketing needs of small startups
+            </p> -->
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Maintain Web Rp. 100 rb/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update dari klien 1x/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Responsive</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>10 halaman</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>10 kategori</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Produk maksimal 50</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Slideshow</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update mandiri</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>1 e-mail company</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Waktu &lt;1 bulan</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+        <!-- Card-->
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">PREMIUM</div>
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">5 jt</span>
+            </div>
+            <p class="frequency mt-3">
+              Harga sudah termasuk domain hosting
+            </p>
+            <!-- <p>
+              This basic package covers the marketing needs of small startups
+            </p> -->
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Maintain Web Rp. 200 rb/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update dari klien 2x/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Responsive</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>&lt;30 halaman</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>&lt;30 kategori</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Produk maksimal 150</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Slideshow</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update mandiri</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>5 e-mail company</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Dinamik web</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>SEO basic Rp. 500 rb/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Waktu &lt;2 bulan</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">PLATINUM</div>
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">8 jt</span>
+            </div>
+            <p class="frequency mt-3">
+              Harga sudah termasuk domain hosting
+            </p>
+            <!-- <p>
+              This basic package covers the marketing needs of small startups -->
+            </p>
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Maintain Web Rp. 400 rb/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update dari klien 4x/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Responsive</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Unlimited halaman</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Unlimited kategori</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Unlimited Produk</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Slideshow</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Update mandiri</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>10 e-mail company</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Dinamik web</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>SEO basic Rp. 1,5jt/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Sistem penunjang</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Waktu &lt;3 bulan</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+        <!-- end of card -->
+        <!-- end of card -->
+
+
+        
+        
+        
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of cards-2 -->
+    <!-- end of pricing -->
+    <div id="pricing" class="cards-2">
+      <div class="absolute bottom-0 h-40 w-full bg-white"></div>
+      <div class="container px-4 pb-px sm:px-8">
+        <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">
+          Pricelist Digital Content Management
+        </h2>
+      <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto">
+        Selain jasa pembuatan website, Flink Digital juga menyediakan jasa
+        lain yaitu Digital Content Creator dan Digital Content Manajemen.
+        Untuk pricelist dan detailnya bisa dilihat di halaman berikut
+      </p>
+
+
+        <!-- Card-->
+        <div class="card">
+          <div class="card-body">
+            <!-- <div class="card-title">STANDARD</div> -->
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">1,5 jt</span>
+            </div>
+            <!-- <div class="frequency">monthly</div> -->
+            <!-- <p>
+              This basic package covers the marketing needs of small startups
+            </p> -->
+            <ul class="list mb-7 mt-3 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Post IG dan FB 1x/hari</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Video IG dan FB 8x/bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Waktu 1 bulan</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div class="text-red-500">*Minimal kontrak 3 bulan</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+      </div>
+    </div>
+    <div id="pricing" class="cards-2">
+      <div class="absolute bottom-0 h-40 w-full bg-white"></div>
+      <div class="container px-4 pb-px sm:px-8">
+        <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">
+          Pricelist Digital Content Creator (1)
+        </h2>
+      <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto">
+        Selain jasa pembuatan website, Flink Digital juga menyediakan jasa
+        lain yaitu Digital Content Creator dan Digital Content Manajemen.
+        Untuk pricelist dan detailnya bisa dilihat di halaman berikut
+      </p>
+
+
+        <!-- Card-->
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">FOTO AKAD</div>
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">1,5 jt</span>
+            </div>
+            <!-- <div class="frequency">monthly</div> -->
+            <!-- <p>
+              This basic package covers the marketing needs of small startups
+            </p> -->
+            <ul class="list mb-7 space-y-2 mt-3  text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Durasi setengah hari(batas jam 12 siang)</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Flashdisk all file</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>120 cetak foto 4R</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>1 album magnetic(album foto)</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+        <!-- Card-->
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">UNDERWATER PHOTO FUN</div>
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">100rb</span>
+            </div>
+            <div class="frequency">/orang</div>
+            <!-- <p>
+              This basic package covers the marketing needs of small startups
+            </p> -->
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Durasi 1 jam/100 rb (maks 5 jam)</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Minimal Rp. 200rb</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Free tiket masuk</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>All file dikasih</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+      </div>
+    </div>
+    <div id="pricing" class="cards-2">
+      <div class="absolute bottom-0 h-40 w-full bg-white"></div>
+      <div class="container px-4 pb-px sm:px-8">
+        <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">
+          Pricelist Digital Content Creator (2)
+        </h2>
+      <!-- <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto">
+        Selain jasa pembuatan website, Flink Digital juga menyediakan jasa
+        lain yaitu Digital Content Creator dan Digital Content Manajemen.
+        Untuk pricelist dan detailnya bisa dilihat di halaman berikut
+      </p> -->
+
+
+        <!-- Card-->
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">DOKUMENTASI</div>
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">300rb</span>
+            </div>
+            <div class="frequency">/12 jam</div>
+            <p>
+              Untuk acara ultah, rapat, gathering, outbond, dll
+            </p>
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>All file dikasih</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Flashdisk all file</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>120 cetak foto 4R</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>1 album magnetic(album foto)</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Rp. 500rb/1hari</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+        <!-- Card-->
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">PREWEED OUTDOOR</div>
+            <div class="price">
+              <span class="currency">Rp. </span><span class="value">1,8jt</span>
+            </div>
+            <div class="frequency">/hari</div>
+            <!-- <p>
+              This basic package covers the marketing needs of small startups
+            </p> -->
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Makeup + outfit sepasang</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Flashdisk all file</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>10 edit foto</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>1 cetak 16RL</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>1 pigura/frame</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div class="text-red-500">*Akomodasi dan ijin lokasi ditanggung klien</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+      </div>
+    </div>
+    <div id="pricing" class="cards-2">
+      <div class="absolute bottom-0 h-40 w-full bg-white"></div>
+      <div class="container px-4 pb-px sm:px-8">
+        <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">
+          Pricelist Digital Content Creator (3)
+        </h2>
+      <!-- <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto">
+        Selain jasa pembuatan website, Flink Digital juga menyediakan jasa
+        lain yaitu Digital Content Creator dan Digital Content Manajemen.
+        Untuk pricelist dan detailnya bisa dilihat di halaman berikut
+      </p> -->
+
+
+        <!-- Card-->
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">PAKET A</div>
+            <!-- <div class="price">
+              <span class="currency">Rp. </span><span class="value">300rb</span>
+            </div>
+            <div class="frequency">/12 jam</div> -->
+            <!-- <p>
+              Untuk acara ultah, rapat, gathering, outbond, dll
+            </p> -->
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>1 Produk (5 foto)</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>*Minimal 10 produk</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+        <!-- Card-->
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">PAKET B</div>
+            <!-- <div class="price">
+              <span class="currency">Rp. </span><span class="value">1,8jt</span>
+            </div>
+            <div class="frequency">/hari</div> -->
+            <!-- <p>
+              This basic package covers the marketing needs of small startups
+            </p> -->
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Video dan foto unlimited</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Waktu 8 jam</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+        <!-- Card-->
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">PAKET C</div>
+            <!-- <div class="price">
+              <span class="currency">Rp. </span><span class="value">1,8jt</span>
+            </div>
+            <div class="frequency">/hari</div> -->
+            <!-- <p>
+              This basic package covers the marketing needs of small startups
+            </p> -->
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>1 Design</div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Minimal 10 design</div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+        <!-- Card-->
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">PAKET D</div>
+            <!-- <div class="price">
+              <span class="currency">Rp. </span><span class="value">1,8jt</span>
+            </div>
+            <div class="frequency">/hari</div> -->
+            <!-- <p>
+              This basic package covers the marketing needs of small startups
+            </p> -->
+            <ul class="list mb-7 space-y-2 text-left">
+              <li class="flex">
+                <i class="fas fa-chevron-right"></i>
+                <div>Berlangganan desain dan foto (30 produk) </div>
+              </li>
+            </ul>
+            <!-- <div class="button-wrapper">
+              <a class="btn-solid-reg page-scroll" href="#download">Download</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- end of card -->
+        <!-- end of card -->
+
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
+        <ul class="mb-4 list-unstyled p-small">
+          <li class="mb-2"><a href="article.html">Article Details</a></li>
+          <li class="mb-2"><a href="terms.html">Terms & Conditions</a></li>
+          <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+        <p class="pb-2 p-small statement">
+          Copyright © <a href="#your-link" class="no-underline">Your name</a>
+        </p>
+
+        <p class="pb-2 p-small statement">
+          Distributed by :<a href="https://themewagon.com/" class="no-underline"
+            >Themewagon</a
+          >
+        </p>
+      </div>
+
+      <!-- end of container -->
+    </div>
+    <!-- end of copyright -->
+    <!-- end of copyright -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery for JavaScript plugins -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- Magnific Popup for lightboxes -->
+    <script src="js/scripts.js"></script>
+    <!-- Custom scripts -->
+  </body>
 </html>
